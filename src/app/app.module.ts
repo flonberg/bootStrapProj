@@ -3,16 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import { JsonPipe } from '@angular/common';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    NgbDatepickerModule,
+    FormsModule,
+    JsonPipe
   ],
   providers: [],
   bootstrap: [AppComponent]
