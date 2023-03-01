@@ -7,11 +7,14 @@ import { NgbDatepickerModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { JsonPipe } from '@angular/common';
+import { HighchartsChartComponent, HighchartsChartModule } from 'highcharts-angular';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,9 @@ import { JsonPipe } from '@angular/common';
     NgbModule,
     NgbDatepickerModule,
     FormsModule,
-    JsonPipe
+    JsonPipe,
+    HighchartsChartModule,
+ 
   ],
   providers: [],
   bootstrap: [AppComponent]
